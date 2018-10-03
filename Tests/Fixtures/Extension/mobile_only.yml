@@ -1,0 +1,9 @@
+
+yokai_messenger:
+  channels:
+    mobile:
+      apns:
+        certificate: /path/to/your/apns-certificate.pem
+        pass_phrase: example
+      gcm:
+        api_key:     YourApiKey

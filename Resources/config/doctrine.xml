@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="yokai_messenger.doctrine_channel"
+                 class="Yokai\MessengerBundle\Channel\DoctrineChannel"
+                 public="true">
+            <argument type="service" id="yokai_messenger.doctrine_channel_manager"/>
+
+            <tag name="yokai_messenger.channel" alias="doctrine"/>
+        </service>
+
+    </services>
+
+</container>

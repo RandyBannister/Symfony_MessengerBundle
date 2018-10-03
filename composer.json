@@ -1,0 +1,42 @@
+{
+    "name": "yokai/messenger-bundle",
+    "description": "Simplify message sending processes in a Symfony project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yann Eugoné",
+            "email": "eugone.yann@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "symfony/framework-bundle": "~2.8|~3.0|~4.0",
+        "symfony/templating": "~2.8|~3.0|~4.0",
+        "symfony/translation": "~2.8|~3.0|~4.0",
+        "yokai/dependency-injection": "~1.0"
+    },
+    "suggest": {
+        "doctrine/orm": "Required to use the Doctrine channel that allow storing message in database",
+        "doctrine/doctrine-bundle": "Required to use the Doctrine channel that allow storing message in database",
+        "symfony/swiftmailer-bundle": "Required to use the Doctrine channel that allow sending message via email",
+        "sly/notification-pusher": "Required to use the Mobile channel that allow sending message via mobile notification",
+        "twilio/sdk": "Required to use the Twilio channel that allow sending message via SMS"
+    },
+    "require-dev": {
+        "doctrine/orm": "^2.4.8",
+        "doctrine/doctrine-bundle": "~1.4",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "sly/notification-pusher": "~2.2",
+        "twilio/sdk": "~5.17",
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": { "Yokai\\MessengerBundle\\": "" }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+yokai_messenger:
+  channels:
+    swiftmailer:
+      enabled: true
+      from: no-reply@acme.org
+      translator_catalog: messaging
+    doctrine:
+      enabled: true
+    mobile:
+      apns:
+        certificate: /path/to/your/apns-certificate.pem
+        pass_phrase: example
+      gcm:
+        api_key:     YourApiKey
+    twilio:
+      from: '+330601020304'
+      api_id: 'azertyuiop'
+      api_token: 'qsdfghjklm'
+  messages:
+    foo:
+      id: foo
+      channels: swiftmailer
+    bar:
+      id: bar
+      channels: doctrine
+    baz:
+      id: baz
+      channels: [swiftmailer, doctrine, mobile]
