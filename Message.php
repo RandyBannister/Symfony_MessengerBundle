@@ -1,10 +1,7 @@
 <?php
 
-namespace Yokai\MessengerBundle;
+namespace MessengerBundle;
 
-/**
- * @author Yann Eugoné <eugone.yann@gmail.com>
- */
 class Message
 {
     /**
