@@ -1,7 +1,8 @@
-<?php
+﻿<?php
 
-namespace MessengerBundle;
+namespace Yokai\MessengerBundle;
 
+/
 class Message
 {
     /**

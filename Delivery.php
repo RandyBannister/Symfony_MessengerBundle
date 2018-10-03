@@ -1,12 +1,8 @@
-<?php
+﻿<?php
 
 namespace Yokai\MessengerBundle;
 
 use Symfony\Component\HttpFoundation\File\File;
-
-/**
- * @author Yann Eugoné <eugone.yann@gmail.com>
- */
 class Delivery
 {
     /**
