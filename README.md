@@ -17,8 +17,8 @@ Principles
 
 A `message` represent the fact that your application is sending something.
 
-Creating a `message` is as easy as creating a service of class `Yokai\MessengerBundle\Message` 
-with at least 1 `yokai_messenger.message` tag, 
+Creating a `message` is as easy as creating a service of class `MessengerBundle\Message` 
+with at least 1 `messenger.message` tag, 
 for each tag you specify the `channel` on which the message should be distributed.
 
 You can also register it using this bundle [configuration](Resources/docs/configuration.md#messages).
