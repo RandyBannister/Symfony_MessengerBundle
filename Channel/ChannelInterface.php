@@ -1,14 +1,9 @@
-<?php
+﻿<?php
 
 namespace Yokai\MessengerBundle\Channel;
 
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Yokai\MessengerBundle\Delivery;
-
-/**
- * @author Yann Eugoné <eugone.yann@gmail.com>
- */
-interface ChannelInterface
+use Yokai\MessengerBundle\Delivery;interface ChannelInterface
 {
     /**
      * @param mixed $recipient
